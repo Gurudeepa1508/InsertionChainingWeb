@@ -14,6 +14,8 @@ public class InsertionChain extends ActionSupport implements ServletRequestAware
     public String password="";
     public String branch="";
     public String rollnum="";
+    public String value="";
+    public int id;
     org.json.simple.JSONObject jsonchildbject;
 
     private boolean responseAsJson = true;
@@ -38,7 +40,6 @@ public class InsertionChain extends ActionSupport implements ServletRequestAware
                 }
                 sb.append(line);
             }
-            System.out.println(sb.toString());
         } finally {
             try {
                 reader.close();
@@ -58,7 +59,12 @@ public class InsertionChain extends ActionSupport implements ServletRequestAware
         password = (String) jsonchildbject.get("password");
         branch = (String) jsonchildbject.get("branch");
         rollnum = (String) jsonchildbject.get("rollnum");
-        System.out.println(name);
+        try {
+            value = (String) jsonchildbject.get("id");
+            id = Integer.parseInt(value);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
     public void InsertData() throws Exception {
@@ -69,14 +75,32 @@ public class InsertionChain extends ActionSupport implements ServletRequestAware
             context.put("password", password);
             Catalog catalog = new InsertCatalog();
             Command insertionchain = catalog.getCommand("insertionchain");
-            insertionchain.execute(context);
-//         String error = context.get("error").toString();
-//        setError(error);
-//        if(error.equals(""))
-//            return "display";
-//        else
-//            return "error";  }
+            InsertionAndVerificationChain insertion=new InsertionAndVerificationChain();
+            insertion.insert(context);
         }
+
+        public void DeleteData() throws Exception {
+        Context context =new InsertContext();
+        context.put("id",id);
+        Catalog catalog = new InsertCatalog();
+        Command insertionchain = catalog.getCommand("insertionchain");
+        InsertionAndVerificationChain delete=new InsertionAndVerificationChain();
+        delete.delete(context);
+    }
+
+    public String ModifyData() throws Exception {
+        Context context =new InsertContext();
+        context.put("name", name);
+        context.put("rollnum", rollnum);
+        context.put("branch", branch);
+        context.put("password", password);
+        context.put("id",id);
+        Catalog catalog = new InsertCatalog();
+        Command insertionchain = catalog.getCommand("insertionchain");
+        InsertionAndVerificationChain modify=new InsertionAndVerificationChain();
+        modify.modify(context);
+        return "display";
+    }
 
 
 }

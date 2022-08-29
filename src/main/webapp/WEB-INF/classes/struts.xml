@@ -3,11 +3,20 @@
 Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
     <package name="default"  extends="json-default">
-        <action name="verify" class="chains.InsertionChain" method="InsertData">
+        <action name="insert" class="chains.InsertionChain" method="InsertData">
             <result name="display" type="json">
                 <param name="Content-type">application/json</param>
             </result>
-<!--            <result name="error">/error.jsp</result>-->
+        </action>
+
+        <action name="delete" class="chains.InsertionChain" method="DeleteData">
+            <result name="display" type="json">
+                <param name="Content-type">application/json</param>
+            </result>
+        </action>
+
+        <action name="modify" class="chains.InsertionChain" method="ModifyData">
+            <result name="display">/success.jsp</result>
         </action>
 
     </package>

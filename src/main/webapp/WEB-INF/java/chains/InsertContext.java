@@ -8,6 +8,17 @@ public class InsertContext extends ContextBase implements Serializable {
     private String branch;
     private String password;
     private String error="";
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
 
     public Connection getConnection() {
         return connection;
@@ -24,7 +35,6 @@ public class InsertContext extends ContextBase implements Serializable {
     }
     public void setError(String error) {
         this.error = error;
-        System.out.println(error);
     }
     public String getName() {
         return name;
@@ -41,8 +51,6 @@ public class InsertContext extends ContextBase implements Serializable {
 
     public void setRollnum(String rollnum) {
         this.rollnum = rollnum;
-        System.out.println(rollnum);
-
     }
 
     public String getBranch() {
@@ -61,7 +69,4 @@ public class InsertContext extends ContextBase implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
-
-
 }
