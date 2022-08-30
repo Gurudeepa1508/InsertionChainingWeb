@@ -4,19 +4,31 @@ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
     <package name="default"  extends="json-default">
         <action name="insert" class="chains.InsertionChain" method="InsertData">
-            <result name="display" type="json">
-                <param name="Content-type">application/json</param>
-            </result>
+            <result name="display">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+
         </action>
 
         <action name="delete" class="chains.InsertionChain" method="DeleteData">
-            <result name="display" type="json">
-                <param name="Content-type">application/json</param>
-            </result>
+            <result name="delete">/delete.jsp</result>
         </action>
 
         <action name="modify" class="chains.InsertionChain" method="ModifyData">
-            <result name="display">/success.jsp</result>
+            <result name="modify">/modify.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="get" class="chains.InsertionChain" method="GetData">
+            <result name="get" type="json">
+            <param name="Content-type">application/json</param>
+                <param name="excludeParams">connection</param>
+            </result>
+        </action>
+
+        <action name="getall" class="chains.InsertionChain" method="GetallData">
+            <result name="getall" type="json">
+                <param name="Content-type">application/json</param>
+            </result>
         </action>
 
     </package>

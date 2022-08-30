@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c12b3a7-92de-47e4-984e-b6da9f5e804d" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Modifycommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/VerificationForModifycommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/deletecommand.java" afterDir="false" />
+    <list default="true" id="5c12b3a7-92de-47e4-984e-b6da9f5e804d" name="Changes" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Getallcommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Getcommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/display.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/modify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/struts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Connectioncommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Connectioncommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/StudentContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertionAndVerificationChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertionAndVerificationChain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/InsertionChain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Insertioncommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Insertioncommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Modifycommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Modifycommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/VerificationForModifycommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/VerificationForModifycommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Verificationcommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/java/chains/Verificationcommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +39,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2DqFNUsXohLV5fUZ5FUjY0Pz5qv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,7 +56,8 @@
     &quot;last_opened_file_path&quot;: &quot;/home/facilio/Documents/java_project/InsertionChainingWeb/src/main/webapp&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.50230414&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.50230414&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -125,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661494552749</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1661758886429</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661758886429</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>

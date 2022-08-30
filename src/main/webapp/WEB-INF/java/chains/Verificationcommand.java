@@ -10,12 +10,12 @@ public class Verificationcommand implements Command {
         String rollnum=context.get( "rollnum").toString();
         String branch=context.get( "branch").toString();
         String password=context.get( "password").toString();
+        //System.out.println(name);
+        //System.out.println(branch);
         if("".equals(name) || "".equals(rollnum)||"".equals(branch)||"".equals(password))
         {
             context.put("error","Please enter all the data");
         }
-        else if(password.length()<8)
-            context.put("error","Password should contain atleast 8 characters");
         return false;
     }
 }

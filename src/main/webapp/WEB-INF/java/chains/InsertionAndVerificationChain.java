@@ -20,4 +20,18 @@ public class InsertionAndVerificationChain extends ChainBase {
         addCommand(new Modifycommand(context));
 
     }
+
+    public void get(Context context) throws Exception
+    {
+        addCommand(new Connectioncommand(context));
+        addCommand(new Getcommand(context));
+
+    }
+
+    public void getall(Context context) throws Exception
+    {
+        addCommand(new Connectioncommand(context));
+        addCommand(new Getallcommand(context));
+
+    }
 }

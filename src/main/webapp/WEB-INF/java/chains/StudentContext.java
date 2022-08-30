@@ -1,48 +1,22 @@
 package chains;
 import org.apache.commons.chain.impl.ContextBase;
 import java.io.Serializable;
-import java.sql.Connection;
-public class InsertContext extends ContextBase implements Serializable {
+
+public class StudentContext extends ContextBase implements Serializable {
     private String name;
     private String rollnum;
     private String branch;
     private String password;
     private String error="";
     private int id;
+    //private Connection connection;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-
-    public Connection getConnection() {
-        return connection;
-    }
-
-    public void setConnection(Connection connection) {
-        this.connection = connection;
-    }
-    private Connection connection;
-
-
-    public String getError() {
-        return error;
-    }
-    public void setError(String error) {
-        this.error = error;
-    }
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-        System.out.println(name);
     }
 
     public String getRollnum() {
@@ -51,6 +25,7 @@ public class InsertContext extends ContextBase implements Serializable {
 
     public void setRollnum(String rollnum) {
         this.rollnum = rollnum;
+
     }
 
     public String getBranch() {
@@ -59,7 +34,6 @@ public class InsertContext extends ContextBase implements Serializable {
 
     public void setBranch(String branch) {
         this.branch = branch;
-
     }
 
     public String getPassword() {
@@ -69,4 +43,30 @@ public class InsertContext extends ContextBase implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+//    public Connection getConnection() {
+//        return connection;
+//    }
+//
+//    public void setConnection(Connection connection) {
+//        this.connection = connection;
+//    }
+
+
 }

@@ -40,7 +40,6 @@ public class Modifycommand implements Command {
                 throwables.printStackTrace();
             }
 
-
         }
         return false;
     }

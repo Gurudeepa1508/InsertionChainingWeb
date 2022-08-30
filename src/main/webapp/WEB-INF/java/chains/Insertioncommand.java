@@ -13,7 +13,6 @@ public class Insertioncommand implements Command {
     }
     public boolean execute(Context context) throws Exception {
         String error=context.get("error").toString();
-        System.out.println(error);
         Connection connection= (Connection) context.get("connection");
         String name=context.get("name").toString();
         String rollnum=context.get( "rollnum").toString();
